@@ -1,0 +1,16 @@
+﻿create database pruebapopsy
+
+go
+
+use pruebapopsy
+
+go
+
+create table Tarea(
+id_tarea int primary key identity(1,1),
+titulo_tarea varchar(50),
+descripcion_tarea varchar(250),
+fecha_creacion_tarea datetime default getdate(),
+fecha_vencimiento_tarea datetime,
+estado_tarea varchar(50)
+)
